@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import PlayerCard from "./components/PlayerCard";
 import { useAppContext } from "./context/AppContext";
 import AddScore from "./components/AddScore";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function App() {
   const [showForm, setShowForm] = useState(false);
@@ -29,7 +30,7 @@ export default function App() {
     window.location.reload();
   };
   return (
-    <main className="relative">
+    <main className="relative h-screen">
       <div className="flex flex-col items-center">
         <h1 className="text-2xl text-center font-semibold mt-4">
           Domines Calculator
@@ -73,6 +74,16 @@ export default function App() {
       )}
       <div className="mx-2">{users[0]?.id && !gameOver && <AddScore />}</div>
       {showForm && <AddPlayer setForm={setShowForm} />}
+      <div className="absolute flex items-center justify-center bottom-0 right-0 w-screen h-[100px] bg-gray-200">
+        <div className="flex gap-4">
+          <a href="https://www.instagram.com/rehan_._cr" target="_blank" className="flex items-center gap-2">
+            <FaInstagram className="h-5 w-5 text-black" />
+          </a>
+          <a href="https://github.com/rehanulHaque" target="_blank" className="flex items-center gap-2">
+            <FaGithub className="h-5 w-5 text-black" />
+          </a>
+        </div>
+      </div>
     </main>
   );
 }

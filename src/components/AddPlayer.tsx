@@ -24,7 +24,7 @@ export default function AddPlayer({
     setForm(false);
   };
   return (
-    <div className="mt-3 bg-red-200 rounded-lg p-4 absolute top-[200px] left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="mt-3 bg-gradient-to-tr from-teal-400 to-indigo-600 rounded-lg p-4 absolute top-[200px] left-1/2 -translate-x-1/2 -translate-y-1/2">
       <form className="flex gap-2 flex-col" onSubmit={handelSubmit}>
         <h2 className="font-semibold text-xl  text-center">Add Player</h2>
         <input
