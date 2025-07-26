@@ -74,7 +74,7 @@ export default function App() {
       )}
       <div className="mx-2">{users[0]?.id && !gameOver && <AddScore />}</div>
       {showForm && <AddPlayer setForm={setShowForm} />}
-      <div className="absolute flex items-center justify-center bottom-0 right-0 w-screen h-[100px] bg-gray-200">
+      <div className="absolute flex items-center justify-center bottom-20 right-1/2 translate-x-1/2">
         <div className="flex gap-4">
           <a href="https://www.instagram.com/rehan_._cr" target="_blank" className="flex items-center gap-2">
             <FaInstagram className="h-5 w-5 text-black" />
